@@ -1,0 +1,11 @@
+CSS
+
+- We use the rem unit for font size instead of the px unit. The reason for that is that Internet Explorer can't resize your text if it's defined in pixels. ---> consistent sizing throughout browsers
+
+-Transition: Transition effects start when a specified CSS property is going to change, so we put the time it should take for that property to change.
+  example --> transition: all .07s ease;
+  ALL of these properties are going to change either when the mouse hovers, or the class changes, whatever the ef, but all of the properties will change, and the change should be transitioned to in 0.07 seconds.
+  -"ease" refers to HOW we want this transition to happen: with a slow start, then fast, then end slow
+
+-"transitioned" is also an event listener -- it gets triggered whenever a css transition is finished. SO, instead of having to switch between ClassNames
+- Also, classList.add vs just changing the className -- classList is more viable when you know the element will change class names again
